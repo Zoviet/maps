@@ -1,8 +1,8 @@
 # ================================
-# OZF and MAP to GeoTIFF
+# Convert MAP with bitmap to GeoTIFF
 # ================================
 
-OziExplorer-OZF2 and MAP files geographical coordinates extractor and geoimages and tiles (Leaflet compatible) generator.
+OziExplorer-OZF2 and MAP with bitmap files geographical coordinates extractor and geoimages and tiles (Leaflet compatible) generator.
 
 # Usage 
 
@@ -18,5 +18,5 @@ sudo apt-get install csvtool
 
 ```
 
-2. Start conver.sh in OziExlorer's files directory.
+2. Start conver.sh in MAP files directory.
 
