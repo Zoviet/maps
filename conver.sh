@@ -1,7 +1,7 @@
 #!/bin/sh
-pngs=($(find -name '*.png'))
+pngs=($(find -regex '.*\.\(png\|jpg\)'));
 for i in ${pngs[@]};do 
-name=`echo "$i" | sed 's/^\(.*[^\.png]\).*$/\1/'`;
+name=`echo "$i" | sed 's/^\(.*[^\.png\|\.jpg]\).*$/\1/'`;
 echo $name;
 sed -i -r "s/png/jpg/g" $name'.map';
 convert $i $name'.jpg'
